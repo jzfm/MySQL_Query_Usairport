@@ -1,0 +1,1 @@
+Ejercicio donde realizamos peticiones a la base de datos de usairlines a traves de MySQL.
