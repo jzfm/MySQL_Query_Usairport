@@ -32,7 +32,7 @@ INNER JOIN carriers ON flights.UniqueCarrier = carriers.CarrierCode
 GROUP BY company_name
 HAVING Average_delay > 10;
 -- 7) ID from the top 10 planes with most flight time
-SELECT carriers.CarrierCode AS carrier, SUM(flights.Distance) AS miles
+SELECT flights.TailNum AS planeID, SUM(flights.Distance) AS miles
 FROM flights 
 INNER JOIN carriers ON flights.UniqueCarrier = carriers.CarrierCode 
 GROUP BY flights.TailNum
